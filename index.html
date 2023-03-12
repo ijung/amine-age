@@ -11,7 +11,7 @@
     Fore more details:
     * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
   -->
-  <base href="/">
+  <base href="/amine-age/">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
@@ -28,17 +28,24 @@
 
   <title>amine_age</title>
   <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" type="text/css" href="loading.css">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5154988531467064"
           crossorigin="anonymous"></script>
 </head>
 <body>
+  <div class="loading-container">
+    <div class="loading"></div>
+    <div id="loading-text">loading</div>
+  </div>
+
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
+
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=2512147322');
+        navigator.serviceWorker.register('flutter_service_worker.js?v=57940944');
       });
     }
   </script>
